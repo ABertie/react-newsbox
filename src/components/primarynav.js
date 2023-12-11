@@ -6,7 +6,7 @@ import Link from "next/link"
 
 export default function PrimaryNavigation(props) {
     return (
-        <header>
+        <header className="flex justify-between items-center p-4">
             {/* <nav> */}
                 {props.site === "Newsbox" 
                 ? <Link href="/archive"><FontAwesomeIcon icon={faInbox} /></Link> 
